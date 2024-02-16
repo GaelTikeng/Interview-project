@@ -4,26 +4,60 @@
   margin: 0;
 }
 
-h1 {
+h1, h2 {
+  padding-top: 20px;
   text-align: center;
 }
 
 .btn {
-  padding: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 5px 30px;
   font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  background: #fff;
+  box-shadow: 1px 3px 4px 1px;
 }
 
-.loader-container {
-  width: 25%;
-  height: 25vh;
+.btn:hover {
+  cursor: pointer;
+  transform: translateY(2px);
+}
+
+.fa-rotate {
+  padding-right: 10px;
+  /* animation: spin-icon 1s linear infinite; */
+}
+
+@keyframes spin-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* .loader-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
   position: fixed;
-  background: #f1f1f1
-    url("https://media.giphy.com/media/8agqybiK5LW8qrG3vJ/giphy.gif") center
+  background: #fff
+    url("https://media.giphy.com/media/8agqybiK5LW8qrG3vJ/giphy.gif")
+    center
     no-repeat;
   z-index: 1;
-}
+} */
 
-/* .spinner {
+.spinner {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   width: 64px;
   height: 64px;
   border: 8px solid;
@@ -39,9 +73,23 @@ h1 {
   100% {
     transform: rotate(360deg);
   }
-} */
+}
+
+p {
+  text-align: center;
+}
 
 img {
-  width: 500px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 768x) {
+  img {
+    width: 96%;
+    margin: 0 auto;
+  }  
 }
