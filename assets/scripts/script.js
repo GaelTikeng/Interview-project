@@ -2,7 +2,7 @@ const url = "https://foodish-api.com/images/burger";
 const btn = document.querySelector(".btn")
 const loaderContainer = document.querySelector(".loader");
 loaderContainer.style.display = "none";
-let burgerType = Math.floor(Math.random() * 10);
+// let randomBurger = Math.floor(Math.random() * 10);
 const listOfBurger = [
   "burger87.jpg",
   "burger13.jpg",
@@ -43,8 +43,9 @@ function fetchImage(mealType) {
 // fetch image when page loads
 fetchImage("burger61.jpg");
 
+// fetch image on click on the refresh button
 function getData() {
-  let burgerType = Math.floor(Math.random() * 10);
-  fetchImage(listOfBurger[burgerType]);
+  let randomBurger = Math.floor(Math.random() * 10);
+  fetchImage(listOfBurger[randomBurger]);
 }
 btn.addEventListener("click", getData);
