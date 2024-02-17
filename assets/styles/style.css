@@ -40,41 +40,6 @@ h1, h2 {
   }
 }
 
-/* .loader-container {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  width: 65px;
-  height: 65px;
-  position: fixed;
-  background: #fff
-    url("https://media.giphy.com/media/8agqybiK5LW8qrG3vJ/giphy.gif")
-    center
-    no-repeat;
-  z-index: 1;
-} */
-
-.spinner {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: 64px;
-  height: 64px;
-  border: 8px solid;
-  border-color: #3d5af1 transparent #3d5af1 transparent;
-  border-radius: 50%;
-  animation: spin-anim 1.2s linear infinite;
-}
-
-@keyframes spin-anim {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 p {
   text-align: center;
 }
