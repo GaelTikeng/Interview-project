@@ -87,6 +87,10 @@ img {
   margin: 20px auto;
 }
 
+.display-error {
+  padding: 50px 0;
+}
+
 @media screen and (max-width: 768x) {
   img {
     width: 96%;
