@@ -22,7 +22,7 @@ function fetchImage(mealType) {
   fetch("https://foodish-api.com/images/burger")
     .then((response) => {
       loaderContainer.style.display = "none";
-      console.log(response);
+      // console.log(response);
       document.querySelector(".display").innerHTML = `
       <div >
         <h2>This is foodish</h2>
@@ -30,7 +30,7 @@ function fetchImage(mealType) {
       </div>`;
     })
     .catch((error) => {
-      console.log(error);
+      // console.log(error);
       document.querySelector(".display").innerHTML = `
       <div>
         <p class="display-error">${error}</p>
