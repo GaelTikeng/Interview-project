@@ -1,3 +1,4 @@
+// external data (constant)
 export const listOfBurger = [
   "burger87.jpg",
   "burger13.jpg",
